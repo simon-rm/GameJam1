@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://c7uydhv6hn22p"]
+
+[ext_resource type="Script" uid="uid://c6lk3sbavsh5m" path="res://template-scenes/scenes/game_scene/configurable_sub_viewport.gd" id="4_6kdah"]
+[ext_resource type="PackedScene" uid="uid://cvpvr03fifxyf" path="res://Grid Test.tscn" id="5_bkkcl"]
+
+[node name="GameUI" type="Control" unique_id=1609552811]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ViewportContainer" type="SubViewportContainer" parent="." unique_id=1831513653]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+stretch_shrink = 4
+
+[node name="ConfigurableSubViewport" type="SubViewport" parent="ViewportContainer" unique_id=204786699]
+handle_input_locally = false
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+size = Vector2i(64, 162)
+render_target_update_mode = 4
+script = ExtResource("4_6kdah")
+
+[node name="GridTest" parent="ViewportContainer/ConfigurableSubViewport" unique_id=1118883701 instance=ExtResource("5_bkkcl")]
