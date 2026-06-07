@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ckl2maswhx657"]
 
-[ext_resource type="Script" path="res://addons/maaacks_game_template/base/nodes/labels/credits_label.gd" id="1_vsasc"]
+[ext_resource type="Script" uid="uid://cc2wtqasev7le" path="res://addons/maaacks_game_template/base/nodes/labels/credits_label.gd" id="1_vsasc"]
 
 [node name="CreditsLabel" type="RichTextLabel" unique_id=525943618]
 anchors_preset = 15
@@ -11,7 +11,12 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 5
 bbcode_enabled = true
-text = "[font_size=48]Collaborators[/font_size]
+text = "
+[font_size=48]Developers[/font_size]
+
+Simon R. Murcia
+
+[font_size=48]Collaborators[/font_size]
 
 [font_size=32]Role[/font_size]
 Person 1  
