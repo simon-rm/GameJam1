@@ -1,6 +1,10 @@
 # Attribution
 ## Collaborators
 
+## Developers
+
+Simon R. Murcia
+
 ### Godot Game Template
 ![Maaack Plugin Icon](/addons/maaacks_game_template/assets/plugin_logo/logo.png)  
 Author: [Marek Belski and contributors](https://github.com/Maaack/Godot-Game-Template/graphs/contributors)  
